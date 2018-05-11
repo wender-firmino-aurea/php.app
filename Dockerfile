@@ -1,7 +1,5 @@
-FROM php:7.0-apache
+FROM php:5.6-apache
 
-RUN apt-get update && \
-    apt-get install -y php5-mysql && \
-    apt-get clean
+RUN docker-php-ext-install pdo pdo_mysql
 
-COPY myapp /var/www/html/
+COPY phptest /var/www/html/
