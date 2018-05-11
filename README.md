@@ -22,7 +22,7 @@ $ docker build -t node.php .
 After build you can run the image
 
 ```
-docker run -p 1234:8080 -d node.php
+docker run -p 1234:80 -d node.php
 ```
 
 ## Running the tests
@@ -34,7 +34,7 @@ $ docker ps
 
 # Example
 ID            IMAGE                                COMMAND    ...   PORTS
-ecce33b30ebf  node.php:latest  npm start  ...   1234->8080
+ecce33b30ebf  node.php:latest  npm start  ...   1234->80
 ```
 
 Now you can call your app using curl (install if needed via: sudo apt-get install curl):
