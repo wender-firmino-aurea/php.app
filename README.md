@@ -7,7 +7,7 @@ This is a Docker image for test. This image include a PHP 5.6 application.
 
 * Docker
 * Curl
-* NPM
+
 
 
 
