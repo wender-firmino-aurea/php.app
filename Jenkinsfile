@@ -3,9 +3,7 @@
 pipeline {
   agent any
   stages {
-        stage('checkout') {
-            git url: 'https://github.com/wender-firmino-aurea/php.app.git'
-        }  
+        
         stage('Docker Build') {
             agent any
             steps {
