@@ -6,7 +6,8 @@
     <body>
         <p>
             <?php 
-                print('Congrats this works very fine!<br>'); 
+                echo 'Just a test!';
+                print('Congrats this works very fine!</br>'); 
                 $version = phpversion();
                 print('<HR>Running PHP:' . $version);
             ?>
